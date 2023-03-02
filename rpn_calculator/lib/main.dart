@@ -37,7 +37,7 @@ class CustomButton extends ElevatedButton {
     required String text,
   }) : super(
           onPressed: onPressed,
-          child: Text(text),
+          child: Text(text, style: TextStyle(fontSize: 20),),
           style: ButtonStyle(
             minimumSize: MaterialStateProperty.all<Size>(
               Size(98, 50), // set the desired width and height here
@@ -85,14 +85,14 @@ class _MyHomePageState extends State<MyHomePage> {
             width: (MediaQuery.of(context).size.width),
           ),
           Container(
-            child: Text(Stacks.stack.toString()),
+            child: Text(Stacks.stack.toString(), style: TextStyle(fontSize: 30),),
             color: Color.fromRGBO(192, 192, 192, 1),
             height: 200,
             width: (MediaQuery.of(context).size.width),
             alignment: Alignment.center,
           ),
           Container(
-            child: Text(currentNumber),
+            child: Text(currentNumber, style: TextStyle(fontSize: 30),),
             color: Color.fromRGBO(192, 192, 192, 1),
             height: 100,
             width: (MediaQuery.of(context).size.width),
